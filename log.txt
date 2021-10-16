@@ -1,0 +1,55 @@
+~/sharelistv2/sharelist $ npm run dev
+
+> dev
+> cd packages/sharelist && yarn dev
+
+yarn run v1.22.15
+$ cross-env NODE_ENV=dev nodemon app.js -i ./cache
+[nodemon] 2.0.13
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node app.js`
+ad05ad4eeecd0e7fbab227f240b11f63
+2021-10-16T12:02:01.366Z
+Sharelist Server is running at http://127.0.0.1:33001/
+Error: Cannot find module '/data/data/com.termux/files/home/sharelistv2/sharelist/node_modules/@sharelist/webdav/dist/index.js'. Please verify that the package.json has a valid "main" entry
+    at tryPackage (internal/modules/cjs/loader.js:303:19)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:516:18)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:867:27)
+    at Function.Module._load (internal/modules/cjs/loader.js:725:27)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/package/webdav/index.js:1:26)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32) {
+  code: 'MODULE_NOT_FOUND',
+  path: '/data/data/com.termux/files/home/sharelistv2/sharelist/node_modules/@sharelist/webdav/package.json',
+  requestPath: '@sharelist/webdav'
+}
+load ctc
+load aliyun
+load baidu
+load caiyun
+load file
+load googledrive
+load http
+load https
+load onedrive
+load sld
+Trace: { code: 404, message: "Can't find [favicon.ico] folder" }
+    at Object.exports.getFiles (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/package/sharelist/utils.js:38:13)
+    at async Controller.list (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/app/controller/api.js:118:27)
+    at async Controller.page (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/app/controller/api.js:47:14)
+    at async cors (/data/data/com.termux/files/home/sharelistv2/sharelist/node_modules/@koa/cors/index.js:56:32)
+Trace: { code: 404, message: "Can't find [favicon.ico] folder" }
+    at Object.exports.getFiles (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/package/sharelist/utils.js:38:13)
+    at async Controller.list (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/app/controller/api.js:118:27)
+    at async Controller.page (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/app/controller/api.js:47:14)
+    at async cors (/data/data/com.termux/files/home/sharelistv2/sharelist/node_modules/@koa/cors/index.js:56:32)
+Trace: { code: 404, message: "Can't find [favicon.ico] folder" }
+    at Object.exports.getFiles (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/package/sharelist/utils.js:38:13)
+    at async Controller.list (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/app/controller/api.js:118:27)
+    at async Controller.page (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/app/controller/api.js:47:14)
+    at async cors (/data/data/com.termux/files/home/sharelistv2/sharelist/node_modules/@koa/cors/index.js:56:32)
