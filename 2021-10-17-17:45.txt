@@ -1,0 +1,117 @@
+~/sharelistv2 $ cd sharelist
+
+~/sharelistv2/sharelist $ ls -a
+
+.             .git        .prettierrc.js  docs               package.json
+
+..            .github     LICENSE         node_modules       packages
+
+.eslintrc.js  .gitignore  README.md       package-lock.json  scripts
+
+~/sharelistv2/sharelist $ cd packages
+
+~/.../sharelist/packages $ ls -a
+
+.   sharelist       sharelist-plugin  sharelist-webdav
+
+..  sharelist-core  sharelist-web
+
+~/.../sharelist/packages $ cd sharelist-web
+
+~/.../packages/sharelist-web $ yarn dev-web
+
+yarn run v1.22.15
+
+warning package.json: No license field
+
+error Command "dev-web" not found.
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+~/.../packages/sharelist-web $ cd ..
+
+~/.../sharelist/packages $ cd ..
+
+~/sharelistv2/sharelist $ yarn dev
+
+yarn run v1.22.15
+
+$ cd packages/sharelist && yarn dev
+
+$ cross-env NODE_ENV=dev nodemon app.js -i ./cache
+
+[nodemon] 2.0.13
+
+[nodemon] to restart at any time, enter `rs`
+
+[nodemon] watching path(s): *.*
+
+[nodemon] watching extensions: js,mjs,json
+
+[nodemon] starting `node app.js`
+
+ad05ad4eeecd0e7fbab227f240b11f63
+
+Port 33001 is already in use
+
+[nodemon] app crashed - waiting for file changes before starting...
+
+^C
+
+~/sharelistv2/sharelist $
+
+~/sharelistv2/sharelist $ yarn dev
+
+yarn run v1.22.15
+
+$ cd packages/sharelist && yarn dev
+
+$ cross-env NODE_ENV=dev nodemon app.js -i ./cache
+
+[nodemon] 2.0.13
+
+[nodemon] to restart at any time, enter `rs`
+
+[nodemon] watching path(s): *.*
+
+[nodemon] watching extensions: js,mjs,json
+
+[nodemon] starting `node app.js`
+
+ad05ad4eeecd0e7fbab227f240b11f63
+
+2021-10-17T07:13:41.471Z
+
+Sharelist Server is running at http://127.0.0.1:33001/
+
+load ctc
+
+load aliyun
+
+load baidu
+
+load caiyun
+
+load file
+
+load googledrive
+
+load http
+
+load https
+
+load onedrive
+
+load sld
+
+Trace: { code: 404, message: "Can't find [favicon.ico] folder" }
+
+    at Object.exports.getFiles (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/package/sharelist/utils.js:38:13)
+
+    at async Controller.list (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/app/controller/api.js:118:27)
+
+    at async Controller.page (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/app/controller/api.js:47:14)
+
+    at async /data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist/package/webdav/index.js:194:11
+
+    at async cors (/data/data/com.termux/files/home/sharelistv2/sharelist/node_modules/@koa/cors/index.js:56:32)
