@@ -1,0 +1,195 @@
+~/sharelistv2/sharelist $ ls -a
+
+.             .git        .prettierrc.js  docs               package.json
+
+..            .github     LICENSE         node_modules       packages
+
+.eslintrc.js  .gitignore  README.md       package-lock.json  scripts
+
+~/sharelistv2/sharelist $ cd sharelist
+
+bash: cd: sharelist: No such file or directory
+
+~/sharelistv2/sharelist $ cd packages
+
+~/.../sharelist/packages $ cd sharelist
+
+~/.../packages/sharelist $ ls -a
+
+.             Dockerfile  app     docker-compose.yml  node_modules
+
+..            LICENSE     app.js  docs                package
+
+CHANGELOG.md  README.md   cache   example             package.json
+
+~/.../packages/sharelist $ mkdir theme
+
+~/.../packages/sharelist $ ls -a
+
+.             Dockerfile  app     docker-compose.yml  node_modules  theme
+
+..            LICENSE     app.js  docs                package
+
+CHANGELOG.md  README.md   cache   example             package.json
+
+~/.../packages/sharelist $ cd sharelist-web
+
+bash: cd: sharelist-web: No such file or directory
+
+~/.../packages/sharelist $ cd ..
+
+~/.../sharelist/packages $ cd sharelist-web
+
+~/.../packages/sharelist-web $ ls -a
+
+.     .eslintrc.js    CHANGELOG.md  package.json  tsconfig.json
+
+..    .gitignore      README.md     public        vite.config.ts
+
+.env  .prettierrc.js  node_modules  src
+
+~/.../packages/sharelist-web $ yarn build
+
+yarn run v1.22.15
+
+warning package.json: No license field
+
+$ vite build
+
+/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist-web/node_modules/esbuild/bin/esbuild:2
+
+throw new Error(`esbuild: Failed to install correctly
+
+^
+
+Error: esbuild: Failed to install correctly
+
+Make sure you don't have "ignore-scripts" set to true. You can check this with
+
+"npm config get ignore-scripts". If that returns true you can reset it back to
+
+false using "npm config set ignore-scripts false" and then reinstall esbuild.
+
+If you're using npm v7, make sure your package-lock.json file contains either
+
+"lockfileVersion": 1 or the code "hasInstallScript": true. If it doesn't have
+
+either of those, then it is likely the case that a known bug in npm v7 has
+
+corrupted your package-lock.json file. Regenerating your package-lock.json file
+
+should fix this issue.
+
+    at Object.<anonymous> (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist-web/node_modules/esbuild/bin/esbuild:2:7)
+
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+
+    at internal/main/run_main_module.js:17:47
+
+failed to load config from /data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist-web/vite.config.ts
+
+error during build:
+
+Error: The service was stopped
+
+    at /data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist-web/node_modules/esbuild/lib/main.js:1219:25
+
+    at /data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist-web/node_modules/esbuild/lib/main.js:611:9
+
+    at Socket.afterClose (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist-web/node_modules/esbuild/lib/main.js:589:7)
+
+    at Socket.emit (events.js:327:22)
+
+    at endReadableNT (internal/streams/readable.js:1327:12)
+
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+error Command failed with exit code 1.
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+~/.../packages/sharelist-web $ yarn dev
+
+yarn run v1.22.15
+
+warning package.json: No license field
+
+$ vite
+
+/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist-web/node_modules/esbuild/bin/esbuild:2
+
+throw new Error(`esbuild: Failed to install correctly
+
+^
+
+Error: esbuild: Failed to install correctly
+
+Make sure you don't have "ignore-scripts" set to true. You can check this with
+
+"npm config get ignore-scripts". If that returns true you can reset it back to
+
+false using "npm config set ignore-scripts false" and then reinstall esbuild.
+
+If you're using npm v7, make sure your package-lock.json file contains either
+
+"lockfileVersion": 1 or the code "hasInstallScript": true. If it doesn't have
+
+either of those, then it is likely the case that a known bug in npm v7 has
+
+corrupted your package-lock.json file. Regenerating your package-lock.json file
+
+should fix this issue.
+
+    at Object.<anonymous> (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist-web/node_modules/esbuild/bin/esbuild:2:7)
+
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+
+    at internal/main/run_main_module.js:17:47
+
+failed to load config from /data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist-web/vite.config.ts
+
+error when starting dev server:
+
+Error: The service was stopped
+
+    at /data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist-web/node_modules/esbuild/lib/main.js:1219:25
+
+    at /data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist-web/node_modules/esbuild/lib/main.js:611:9
+
+    at Socket.afterClose (/data/data/com.termux/files/home/sharelistv2/sharelist/packages/sharelist-web/node_modules/esbuild/lib/main.js:589:7)
+
+    at Socket.emit (events.js:327:22)
+
+    at endReadableNT (internal/streams/readable.js:1327:12)
+
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+error Command failed with exit code 1.
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+~/.../packages/sharelist-web $ yarn dev-web
+
+yarn run v1.22.15
+
+warning package.json: No license field
+
+error Command "dev-web" not found.
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
