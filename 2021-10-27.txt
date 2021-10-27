@@ -1,0 +1,51 @@
+ad05ad4eeecd0e7fbab227f240b11f63                              2021-10-27T04:33:45.497Z                                      Sharelist Server is running at http://127.0.0.1:33001/
+
+Error: Cannot find module '/data/data/com.termux/files/home/sharelist/node_modules/@sharelist/webdav/dist/index.js'. Please
+
+verify that the package.json has a valid "main" entry
+
+    at tryPackage (node:internal/modules/cjs/loader:353:19)
+
+    at Function.Module._findPath (node:internal/modules/cjs/loader:566:18)
+
+    at Function.Module._resolveFilename (node:internal/modules
+
+/cjs/loader:919:27)                                               at Module.Hook._require.Module.require (/data/data/com.ter
+
+mux/files/usr/lib/node_modules/pm2/node_modules/require-in-the
+
+-middle/index.js:61:29)                                           at require (node:internal/modules/cjs/helpers:102:18)         at Object.<anonymous> (/data/data/com.termux/files/home/sh
+
+arelist/packages/sharelist/package/webdav/index.js:1:26)
+
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+
+    at Module.load (node:internal/modules/cjs/loader:981:32)      at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+
+  code: 'MODULE_NOT_FOUND',                                     path: '/data/data/com.termux/files/home/sharelist/node_modules/@sharelist/webdav/package.json',
+
+  requestPath: '@sharelist/webdav'                            }
+
+load ctc                                                      load aliyun                                                   load baidu
+
+load caiyun
+
+load file
+
+load googledrive
+
+load http
+
+load https
+
+load onedrive
+
+load sld
+
+~
+
+~
+
+~
